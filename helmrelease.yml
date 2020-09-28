@@ -6,7 +6,7 @@ metadata:
 spec:
   releaseName: choerodon/minio
   targetNamespace: web-host-devel
-  timeout: 300
+  timeout: 301
   resetValues: false
   wait: false
   forceUpgrade: false
