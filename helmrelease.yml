@@ -39,7 +39,7 @@ spec:
     ## Update strategy for Deployments
     DeploymentUpdate:
       type: RollingUpdate
-      maxUnavailable: 0
+      maxUnavailable: 1
       maxSurge: 100%
 
     ## Update strategy for StatefulSets
