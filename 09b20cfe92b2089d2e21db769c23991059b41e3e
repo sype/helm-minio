@@ -1,0 +1,1 @@
+{"jobID":"d0969bc6-dfb1-29cf-9aa9-f35137e1ae66","spec":{"type":"policy","cause":{"Message":"","User":"Sebastien Pincemail \u003cextern.sebastien.pincemail@europcar.com\u003e"},"spec":{"default:helmrelease/minio":{"add":{"automated":"true"},"remove":{}}}},"result":null}
