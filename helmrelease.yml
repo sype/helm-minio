@@ -13,7 +13,7 @@ spec:
   chart:
     repository: https://openchart.choerodon.com.cn/choerodon/c7n
     name: miniov4
-    version: 7.0.2
+    version: 7.0.1
   values:
     replicas: 4
     image:
