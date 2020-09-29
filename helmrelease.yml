@@ -20,6 +20,7 @@ spec:
   values:
     replicas: 4
     image:
+      imagePullPolicy: IfNotPresent
       tag: latest
     accessKey: AKIAVJDUW7HRSB7IQXAF
     secretKey: Lifeovereverything$971
