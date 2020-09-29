@@ -20,7 +20,7 @@ spec:
   values:
     replicas: 4
     image:
-      tag: latest
+      tag: 10501-7595def
     accessKey: AKIAVJDUW7HRSB7IQXAF
     secretKey: Lifeovereverything$971
 
