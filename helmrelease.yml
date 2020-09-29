@@ -16,11 +16,11 @@ spec:
   chart:
     repository: https://openchart.choerodon.com.cn/choerodon/c7n
     name: miniov4
-    version: 7.0.0
+    version: 7.0.2
   values:
     replicas: 4
     image:
-      tag: 10501-7595def
+      tag: latest
     accessKey: AKIAVJDUW7HRSB7IQXAF
     secretKey: Lifeovereverything$971
 
