@@ -1,0 +1,58 @@
+image:
+  tag: latest
+env:
+    - name: accessKey
+      valueFrom:
+        secretKeyRef:
+          name: aws-secret
+          key: username
+    - name: secretKey
+      valueFrom:
+        secretKeyRef:
+          name: aws-secret
+          key: password
+
+
+
+
+service:
+  type: LoadBalancer
+defaultBucket:
+  enabled: false
+  name: velero ## permet la création du bucket de sauvegarde à l’installation
+persistence:
+  enabled: true ## activation de la persistance du volume
+  accessMode: ReadWriteOnce
+  size: 50Gi ## on définit la taille de notre PV dédié à Minio
+
+s3gateway:
+  enabled: true
+  accessKey:
+    valueFrom:
+      secretKeyRef:
+        name: aws-secret
+        key: username
+  secretKey:
+    valueFrom:
+      secretKeyRef:
+        name: aws-secret
+        key: password
+
+
+## Update strategy for Deployments
+DeploymentUpdate:
+  type: RollingUpdate
+  maxUnavailable: 0
+  maxSurge: 100%
+
+## Update strategy for StatefulSets
+StatefulSetUpdate:
+  updateStrategy: RollingUpdate
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  path: /
+  hosts:
+    - images.webiconographie.com ## On définit une URL d'accès pour la webui Minio à travers notre ingress pour exposer le service minio
