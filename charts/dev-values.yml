@@ -1,18 +1,10 @@
 image:
-  tag: latest
-env:
-    - name: accessKey
-      valueFrom:
-        secretKeyRef:
-          name: aws-secret
-          key: username
-    - name: secretKey
-      valueFrom:
-        secretKeyRef:
-          name: aws-secret
-          key: password
+  repository: minio/minio
+  tag: RELEASE.2020-09-26T03-44-56Z
+  pullPolicy: IfNotPresent
 
-
+accessKey: AKIAVJDUW7HRSB7IQXAF
+secretKey: Lifeovereverything$971
 
 
 service:
@@ -25,18 +17,6 @@ persistence:
   accessMode: ReadWriteOnce
   size: 50Gi ## on définit la taille de notre PV dédié à Minio
 
-s3gateway:
-  enabled: true
-  accessKey:
-    valueFrom:
-      secretKeyRef:
-        name: aws-secret
-        key: username
-  secretKey:
-    valueFrom:
-      secretKeyRef:
-        name: aws-secret
-        key: password
 
 
 ## Update strategy for Deployments
