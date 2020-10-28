@@ -11,7 +11,7 @@ secretKey: Lifeovereverything$971
 
 
 service:
-  type: LoadBalancer
+  type: ClusterIP 
 defaultBucket:
   enabled: false
   name: velero ## permet la création du bucket de sauvegarde à l’installation
