@@ -18,8 +18,9 @@ defaultBucket:
 persistence:
   enabled: true ## activation de la persistance du volume
   accessMode: ReadWriteOnce
+  storageClass: ""
+  VolumeName: ""
   size: 50Gi ## on définit la taille de notre PV dédié à Minio
-
 
 
 ## Update strategy for Deployments
