@@ -2,6 +2,9 @@ image:
   repository: minio/minio
   tag: latest 
   pullPolicy: IfNotPresent
+resources:
+  requests:
+    memory: 2G
 
 accessKey: AKIAVJDUW7HRSB7IQXAF
 secretKey: Lifeovereverything$971
