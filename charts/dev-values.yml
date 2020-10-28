@@ -1,5 +1,5 @@
 image:
-  repository: bitnami/minio 
+  repository: minio/minio 
   tag: latest 
   pullPolicy: IfNotPresent
 resources:
