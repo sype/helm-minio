@@ -13,7 +13,7 @@ secretKey: Lifeovereverything$971
 service:
   type: LoadBalancer 
 defaultBucket:
-  enabled: false
+  enabled: true 
   name: velero ## permet la création du bucket de sauvegarde à l’installation
 persistence:
   enabled: true ## activation de la persistance du volume

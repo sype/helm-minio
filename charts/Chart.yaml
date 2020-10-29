@@ -14,7 +14,3 @@ sources:
 maintainers:
 - name: MinIO, Inc
   email: dev@minio.io
-dependencies:
-- name: postgresql
-  version: 9.2.1
-  repository: https://charts.bitnami.com/bitnami
