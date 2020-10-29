@@ -14,3 +14,6 @@ sources:
 maintainers:
 - name: MinIO, Inc
   email: dev@minio.io
+dependencies:
+ - name: minio
+   version: 7.0.2
