@@ -11,15 +11,15 @@ secretKey: Lifeovereverything$971
 
 
 service:
-  type: ClusterIP 
+  type: LoadBalancer
 defaultBucket:
   enabled: false
   name: velero ## permet la création du bucket de sauvegarde à l’installation
 persistence:
   enabled: true ## activation de la persistance du volume
   accessMode: ReadWriteOnce
-  storageClass: ""
-  VolumeName: ""
+  #storageClass: ""
+  #VolumeName: ""
   size: 50Gi ## on définit la taille de notre PV dédié à Minio
 
 
