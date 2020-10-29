@@ -1,0 +1,3 @@
+dependencies:
+  - name: minio
+    version: 7.0.2
